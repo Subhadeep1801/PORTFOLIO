@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  flex-direction: column;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#mobile-btn i {
+  display: flex;
+  font-size: 27px;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+ul {
+  flex-direction: column;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  background: #a2a2f5;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+#mobile-btn {
+  display: flex;
+  padding: 23px 20px;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#x i {
+  font-size: 2em;
+}
+#m i {
+  font-size: 2em;
+}
+
+#dark-btn {
+  padding: 13px 10px;
+  position: absolute;
+  top: 0px;
+  right: 87%;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 40px 23px;
+}
+
+nav ul li a {
+  font-size: 1.6rem;
+}
+nav ul li a i {
+  margin-right: 16px;
+}
+
+nav ul li a:hover {
+  color: #075ce1;
+}
+.fast-section {
+  flex-direction: column-reverse;
+}
+
+.fast-section > div {
+  width: 70%;
+}
+
+.right-section img {
+  width: 100%;
+}
+
+.left-section {
+  font-size: 2em;
+}
