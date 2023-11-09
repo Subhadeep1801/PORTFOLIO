@@ -18,13 +18,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 600px)"
+      href="css/mobile.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <link
-    rel="stylesheet"
-    media="screen and (max-width: 600px)"
-    href="css/mobile.css"
-  />
   <body class="">
     <header>
       <div id="mobile-btn">
@@ -36,29 +46,29 @@
       <nav id="nav" class="nav-bar">
         <div id="name" class="left">Subhadeep's Portfolio</div>
         <div class="right">
-          <ul id="ul" class="">
+          <ul id="ul" class="ul">
             <li>
               <a class="visit" href="#Home"
                 ><i class="fa-solid fa-house"></i>Home</a
               >
             </li>
             <li>
-              <a class="visit" href="#Tach Skill"
+              <a class="visit1" href="#Tach-Skill"
                 ><i class="fa-solid fa-tachograph-digital"></i>Tach Skill</a
               >
             </li>
             <li>
-              <a class="visit" href="#About"
-                ><i class="fa-solid fa-address-card"></i>About</a
-              >
-            </li>
-            <li>
-              <a class="visit" href="#Projects"
+              <a class="visit2" href="#Projects"
                 ><i class="fa-solid fa-diagram-project"></i>Projects</a
               >
             </li>
             <li>
-              <a class="visit" href="#Contact-Me"
+              <a class="visit3" href="#About"
+                ><i class="fa-solid fa-address-card"></i>About</a
+              >
+            </li>
+            <li>
+              <a class="visit4" href="#Contact-Me"
                 ><i class="fa-solid fa-address-book"></i>Contact Me</a
               >
             </li>
@@ -66,49 +76,101 @@
         </div>
       </nav>
       <div id="dark-btn" class="">
-        <div id="sun" class="">
+        <div id="sun" class="display-none">
           <i class="fa-sharp fa-solid fa-sun"></i>
         </div>
-        <div id="moon" class="display-none">
+        <div id="moon" class="">
           <i class="fa-sharp fa-solid fa-moon"></i>
         </div>
       </div>
     </header>
     <main>
       <section id="Home" class="fast-section">
-        <div class="left-section">
+        <div class="left-section anima-1s">
           Hi My name is <span class="color">Subhadeep</span>
           <div>and I am a passionate</div>
           <span id="element"></span>
           <div class="button">
-            <button id="btn-resume" class="button-light">
+            <button id="btn-resume" class="button-dark">
               <a
                 id="a-resume"
-                class="a1"
+                class="a2"
                 href="Subadhep Samanta CV August 23.pdf"
                 download
               >
                 download resume</a
               >
             </button>
-            <button id="btn-git" class="button-light">
+            <button id="btn-git" class="button-dark">
               <a
                 id="a-git"
-                class="a1"
-                href="http://https://github.com/Subhadeep1801"
+                class="a2"
+                href="https://github.com/Subhadeep1801"
+                target="_blank"
                 >visit Github</a
               >
             </button>
           </div>
         </div>
         <div class="right-section">
-          <img src="img/Developer.png" alt="" />
+          <img src="img/Developer.png" alt="" class="anima" />
+          <div class="shadow anima-opa"></div>
         </div>
       </section>
-      <section id="Tach Skill" class="second-section">
+      <section id="Tach-Skill" class="second-section">
         <h1>Tach Skill</h1>
-        <div id="phtos">
-          <div class="png">
+        <div id="box">
+          <div id="box-container">
+            <ul>
+              <li>
+                <div>
+                  <label>HTML</label>
+                  <label>90%</label>
+                </div>
+                <div class="bar-container">
+                  <div class="bar html"></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label>CSS</label>
+                  <label>85%</label>
+                </div>
+                <div class="bar-container">
+                  <div class="bar css"></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label>Javascript</label>
+                  <label>70%</label>
+                </div>
+                <div class="bar-container">
+                  <div class="bar js"></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label>wordpress</label>
+                  <label>75%</label>
+                </div>
+                <div class="bar-container">
+                  <div class="bar wordpress"></div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <label>photoshop</label>
+                  <label>60%</label>
+                </div>
+                <div class="bar-container">
+                  <div class="bar photoshop"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="png">
             <img src="img/html-5_5968267.png" alt="html5" />
           </div>
           <div class="png"><img src="img/css_919826.png" alt="css" /></div>
@@ -120,6 +182,49 @@
           </div>
           <div class="png">
             <img src="img/photoshop.png" alt="photoshop" />
+          </div> -->
+      </section>
+      <section id="Projects">
+        <h1>Projects</h1>
+        <div id="container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <img
+                    class="card-w"
+                    src="img/WhatsApp Image 2023-11-06 at 21.14.07_fa7708ce.jpg"
+                    alt=""
+                  />
+                  <h2>profile card</h2>
+                  <p>html, css</p>
+                  <a
+                    href="https://subhadeep1801.github.io/profile-Card/"
+                    target="_blank"
+                    >visit</a
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="img/css-3_5968242.png" alt="" />
+                  <h2>profile card</h2>
+                  <p>html, css</p>
+                  <a href="http://">visit</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="img/css-3_5968242.png" alt="" />
+                  <h2>profile card</h2>
+                  <p>html, css</p>
+                  <a href="http://">visit</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -143,7 +248,6 @@
           </div>
         </div>
       </section>
-      <section id="Projects"></section>
       <!-- <section id="Contact-Me">
         <i class="fa-brands fa-whatsapp"></i>
         <i class="fa-brands fa-github"></i>
@@ -158,22 +262,49 @@
           <h3>Subhadeep's Developer Portfolio</h3>
         </div>
         <div class="footer-second">
-          <ul>
-            <li>
-              <a href="Wa.me/9735339634"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
-            </li>
-            <li><a href="#"> <i class="fa-solid fa-phone"></i>+91 9735339634</a></li>
-            <li><a href=""> <i class="fa-solid fa-envelope"></i>subhadeep.samanta1801@gmail.com</a></li>
-            <li><a href=""><i class="fa-brands fa-github"></i> Github</a></li>
-            <li><a href=""><i class="fa-brands fa-linkedin"></i> linkedin</a></li>
-          </ul>
+          <li>
+            <a href="https://wa.me/qr/5CEWRGY5LXTWH1" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i>whatsapp</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa-solid fa-phone"></i>+91 9735339634</a
+            >
+          </li>
+          <li>
+            <a href="mailto:subhadeep.samanta1801@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+              >subhadeep.samanta1801@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i> linkedin</a
+            >
+          </li>
         </div>
       </div>
       <div class="footer-center">
-        Copyright &#169 subhadeepsportfolio.com | All rights reserved 
+        Copyright subhadeepsportfolio.com | All rights reserved
       </div>
+      <!-- &#169 -->
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animated",
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
